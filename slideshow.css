@@ -1,0 +1,223 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+li {
+  display: block;
+  text-align: right;
+  padding: 2.5rem;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.nav-list a:hover {
+  color: var(--main-blue);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+.nav-list a {
+  color: var(--main-white);
+  text-decoration: none;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 6rem;
+  color: #f0f0f0;
+}
+.section1 > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
+}
+
+.section2 {
+  text-align: center;
+  padding: 0;
+  background: var(--main-blue);
+  width: 100%;
+}
+.section2-heading {
+  max-width: 1000px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid #f0f0f0;
+}
+h2 {
+  font-size: 4.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 4rem;
+}
+.mySlides {
+  display: none;
+  padding-bottom: 6rem;
+}
+img {
+  vertical-align: middle;
+  width: 150%;
+  height: 700px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+.contact-header > p {
+  font-style: italic;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+.contact-details:hover {
+  transform: translateY(25px);
+}
+.btn {
+  text-decoration: none;
+  color: var(--main-white);
+}
+/* ----------------------------------------- */
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #303841;
+  border-top: 4px solid #be3144;
+}
+footer > p {
+  margin: 2rem;
+}
